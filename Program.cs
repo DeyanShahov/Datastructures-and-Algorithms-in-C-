@@ -10,7 +10,7 @@
             Console.WriteLine("Enter the question number to view the question and solution: ");
             int questionNumber = int.Parse(Console.ReadLine());
 
-            menu.DisplayQuestionAndSolution(questionNumber);
+            menu.ExecuteSolution(questionNumber);
 
             Console.ReadLine();
 

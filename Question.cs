@@ -3,12 +3,18 @@
     public class Question
     {
         public string Title { get; set; }
-        public string Solution { get; set; }
+        public ISolution Solution { get; set; }
 
-        public Question( string title, string solution)
+        public Question( string title, ISolution solution)
         {
             Title = title;
             Solution = solution;
+        }
+
+        public void ExecuteSolution()
+        {
+            Console.WriteLine($"Executing solution for question: {Title}");
+            Solution.Solve();
         }
     }
 }

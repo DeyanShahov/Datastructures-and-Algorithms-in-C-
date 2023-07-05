@@ -1,4 +1,6 @@
-﻿namespace Datastructures_and_Algorithms_in_C_
+﻿using Datastructures_and_Algorithms_in_C_.Solutions;
+
+namespace Datastructures_and_Algorithms_in_C_
 {
     public class Menu
     {
@@ -12,8 +14,8 @@
 
         private void InitializeQuestions()
         {
-            questions.Add(new Question("How to Print duplicate characters in a String?", "Solution"));
-            questions.Add(new Question("How to check if two Strings are anagrams of each other?", "Solution2"));
+            questions.Add(new Question("How to Print duplicate characters in a String?", new DuplicateCharactersSolutions()));
+            questions.Add(new Question("How to check if two Strings are anagrams of each other?", new TwoWordsAnagramsSolutions()));
         }
 
         public void DisplayMenu()
@@ -25,13 +27,12 @@
             }
         }
 
-        public void DisplayQuestionAndSolution(int questionNumber)
+        public void ExecuteSolution(int questionNumber)
         {
             if (questionNumber >= 1 && questionNumber <= questions.Count)
             {
                 Question selectQuestion = questions[questionNumber - 1];
-                Console.WriteLine($"Question: {selectQuestion.Title}");
-                Console.WriteLine($"Solution: {selectQuestion.Solution}");
+                selectQuestion.ExecuteSolution();
             }
             else
             {

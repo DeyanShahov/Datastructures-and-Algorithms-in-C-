@@ -5,7 +5,11 @@
         
         public void Solve()
         {
-            string value2 = Reverse("Google");
+            string value1 = Reverse("Google");
+
+            Console.WriteLine(value1);
+
+            string value2 = new string("abvgd".Reverse().ToArray());
 
             Console.WriteLine(value2);
 

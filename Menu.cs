@@ -16,6 +16,7 @@ namespace Datastructures_and_Algorithms_in_C_
         {
             questions.Add(new Question("How to Print duplicate characters in a String?", new DuplicateCharactersSolutions()));
             questions.Add(new Question("How to check if two Strings are anagrams of each other?", new TwoWordsAnagramsSolutions()));
+            questions.Add(new Question("How to reverse String using Iteration and Recursion?", new ReverseStringSolution()));
         }
 
         public void DisplayMenu()

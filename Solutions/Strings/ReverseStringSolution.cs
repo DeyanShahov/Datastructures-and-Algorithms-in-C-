@@ -1,8 +1,8 @@
-﻿namespace Datastructures_and_Algorithms_in_C_.Solutions
+﻿namespace Datastructures_and_Algorithms_in_C_.Solutions.Strings
 {
     internal class ReverseStringSolution : ISolution
     {
-        
+
         public void Solve()
         {
             string value1 = Standart("Google");

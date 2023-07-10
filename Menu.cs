@@ -1,4 +1,4 @@
-﻿using Datastructures_and_Algorithms_in_C_.Solutions;
+﻿using Datastructures_and_Algorithms_in_C_.Solutions.Strings;
 
 namespace Datastructures_and_Algorithms_in_C_
 {
@@ -18,6 +18,7 @@ namespace Datastructures_and_Algorithms_in_C_
             questions.Add(new Question("How to check if two Strings are anagrams of each other?", new TwoWordsAnagramsSolutions()));
             questions.Add(new Question("How to reverse String using Iteration and Recursion?", new ReverseStringSolution()));
             questions.Add(new Question("How to count number of words in a String?", new NumberOfWordsSolution()));
+            questions.Add(new Question("How to check if String is Palindrome?", new StringPalindromicSolution()));
         }
 
         public void DisplayMenu()

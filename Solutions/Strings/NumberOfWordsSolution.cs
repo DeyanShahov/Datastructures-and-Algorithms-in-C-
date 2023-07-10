@@ -1,6 +1,6 @@
 ﻿using Bogus.DataSets;
 
-namespace Datastructures_and_Algorithms_in_C_.Solutions
+namespace Datastructures_and_Algorithms_in_C_.Solutions.Strings
 {
     internal class NumberOfWordsSolution : ISolution
     {

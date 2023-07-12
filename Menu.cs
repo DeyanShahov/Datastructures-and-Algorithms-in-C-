@@ -20,6 +20,7 @@ namespace Datastructures_and_Algorithms_in_C_
             questions.Add(new Question("How to count number of words in a String?", new NumberOfWordsSolution()));
             questions.Add(new Question("How to check if String is Palindrome?", new StringPalindromicSolution()));
             questions.Add(new Question("How to replace all spaces in a string with %20?", new ReplaceAllSpaceInStringSolution()));
+            questions.Add(new Question("how to find all substring in a string?", new SubstringsInString()));
         }
 
         public void DisplayMenu()
